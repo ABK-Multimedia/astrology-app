@@ -8,4 +8,4 @@ def get_data():
     return {'message': 'Hello from Python backend!'}
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(host='localhost', port=5020, debug=True)

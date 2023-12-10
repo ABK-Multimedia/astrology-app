@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Simple astrology based content web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pyserver": "python ./backend_py_3.12.1/app.py",
+    "frontend": "cd react && npm start",
+    "pyserver -wsgi": "gunicorn -w 4 app:app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flask": "^0.2.10",
+    "pip": "^0.0.1"
+  }
+}
